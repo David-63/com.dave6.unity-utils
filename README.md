@@ -1,6 +1,12 @@
 # com.dave6.unity-utils
-런타임에 Unity의 **PlayerLoop** 를 수정하는 작은 유틸리티.
+**Unity** 관련 유틸리티 패키지.
+
+## Feature
+
+- 런타임에 Unity의 **PlayerLoop** 를 수정하는 작은 유틸리티.
 특정 타이밍(예: `EarlyUpdate`, `Update`, `PreLateUpdate` 등)에 자신의 업데이트 로직을 삽입가능.
+
+- GameObject의 `GetOrAddComponent` 함수로 간단 컴포넌트 참조 함수 제공
 
 ## Usage
 `PlayerLoopUtils` 다음과 같은 보조 방법을 제공:
