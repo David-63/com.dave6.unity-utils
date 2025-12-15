@@ -1,6 +1,6 @@
 {
   "name": "com.dave6.unity-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "displayName": "Dave Unity Utilities",
   "description": "A runtime utility package for customizing and extending Unity's PlayerLoop.",
   "unity": "6000.0",

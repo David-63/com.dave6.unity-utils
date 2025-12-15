@@ -7,6 +7,7 @@
 특정 타이밍(예: `EarlyUpdate`, `Update`, `PreLateUpdate` 등)에 자신의 업데이트 로직을 삽입가능.
 
 - GameObject의 `GetOrAddComponent` 함수로 간단 컴포넌트 참조 함수 제공
+- GameObject의 자식 객체가 가진 컴포넌트를 가져오는 함수 제공
 
 ## Usage
 `PlayerLoopUtils` 다음과 같은 보조 방법을 제공:
