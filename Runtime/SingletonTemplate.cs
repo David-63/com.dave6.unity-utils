@@ -4,25 +4,25 @@ namespace UnityUtils
 {
     public abstract class SingletonTemplate<T> : MonoBehaviour where T : SingletonTemplate<T>
     {
-        [SerializeField] bool m_Persistent = true;
-        public static T instance {get; protected set;}
+        [SerializeField] bool _Persistent = false;
+        public static T Instance {get; protected set;}
 
         protected virtual void Awake()
         {
             var current = this as T;
-            if (instance != null && instance != current)
+            if (Instance != null && Instance != current)
             {
                 Destroy(gameObject);
                 return;
             }
-            instance = current;
+            Instance = current;
 
-            if (m_Persistent) DontDestroyOnLoad(gameObject);
+            if (_Persistent) DontDestroyOnLoad(gameObject);
         }
 
         protected virtual void OnDestroy()
         {
-            if (instance == this) instance = null;
+            if (Instance == this) Instance = null;
         }
     }
 }

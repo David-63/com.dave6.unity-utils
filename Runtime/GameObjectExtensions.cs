@@ -12,7 +12,7 @@ namespace UnityUtils
 
         public static bool TryGetComponentInChildren<T>(this Component self, out T component, bool includeInactive = false) where T : Component
         {
-            if (self.TryGetComponent<T>(out component)) return true;
+            if (self.TryGetComponent(out component)) return true;
 
             foreach (Transform child in self.transform)
             {
